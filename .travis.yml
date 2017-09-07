@@ -11,5 +11,7 @@ script:
   - pip install ansible-container[docker] 'ansible>=2.3'
   - ansible-container --debug build
   - ansible-container --debug run
+  - docker ps -a
+  - env | grep DOCKER
   - ansible-playbook -vvv run-tests.yml
 

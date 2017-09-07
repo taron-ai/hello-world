@@ -4,8 +4,12 @@ sudo: required
 services:
   - docker
 
+before_install:
+  - echo $DOCKER_HOST
+
 script:
   - pip install ansible-container[docker] 'ansible>=2.3'
   - ansible-container --debug build
   - ansible-container --debug run
   - ansible-playbook -vvv run-tests.yml
+

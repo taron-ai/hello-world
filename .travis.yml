@@ -1,0 +1,11 @@
+language: python
+sudo: required
+
+services:
+  - docker
+
+script:
+  - pip install ansible-container[docker] 'ansible>=2.3'
+  - ansible-container --debug build
+  - ansible-container --debug run
+  - ansible-playbook -vvv run-tests.yml

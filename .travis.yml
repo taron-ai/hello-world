@@ -8,7 +8,7 @@ before_install:
   - echo $DOCKER_HOST
 
 script:
-  - pip install ansible-container[docker] 'ansible>=2.3' 'docker-compose<1.16'
+  - pip install ansible-container[docker] 'ansible>=2.3' 'docker-compose<1.10'
   - ansible-container --debug build
   - ansible-container --debug run
   - docker ps -a

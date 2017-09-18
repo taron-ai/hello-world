@@ -44,8 +44,8 @@ ansible-container destroy
 
 ## Authors
 
-Taken from [j00bar's ](https://github.com/j00bar) AnsibleFest San Francisco 2017 presentation (https://www.ansible.com/ansiblefest). Thanks @j00bar!
+Taken from [j00bar's ](https://github.com/j00bar) AnsibleFest San Francisco 2017 [presentation](https://www.ansible.com/ansiblefest). Thanks @j00bar!
 
 ## License
 
-Apache V2
+[Apache V2](https://www.apache.org/licenses/LICENSE-2.0)

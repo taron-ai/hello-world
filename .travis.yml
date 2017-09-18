@@ -1,18 +1,16 @@
 language: python
+dist: trusty
 sudo: required
-
 services:
-  - docker
+- docker
 
 before_install:
   - echo $DOCKER_HOST
 
 script:
-  # 'ansible>=2.3' 'docker-compose<1.10'
   - pip install ansible-container[docker]
   - ansible-container --debug build
   - ansible-container --debug run
   - docker ps -a
   - env | grep DOCKER
   - ansible-playbook -vvv run-tests.yml
-

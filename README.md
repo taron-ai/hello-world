@@ -12,20 +12,21 @@ A simple example project for [Ansible Container](https://github.com/ansible/ansi
 The following script will download this project from Galaxy, build the container, and run it locally, exposing the flask server on host port 4000:
 
 ```
+#!/bin/bash
 # Create a new directory, and set it as your working dir
-$ mkdir hello-world
-$ cd hello-world 
+mkdir hello-world
+cd hello-world 
 
 # Download the project
-$ ansible-container init ansible.hello-world
+ansible-container init ansible.hello-world
 
 # Build the container
-$ ansible-container build 
+ansible-container build 
 
 # Run hello world
-$ ansible-container run
+ansible-container run
 
 # Open a browser and load http://localhost:4000
-$ open http://localhost:4000
+open http://localhost:4000
 ```
 

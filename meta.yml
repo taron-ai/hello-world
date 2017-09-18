@@ -26,7 +26,7 @@ galaxy_info:
   # (usually master) will be used.
   #github_branch:
 
-  tags:
+  galaxy_tags:
   - ansible container
   - flask
   - hello world 

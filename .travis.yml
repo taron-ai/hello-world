@@ -9,8 +9,9 @@ before_install:
 
 script:
   - pip install ansible-container[docker]
+  - pip install ansible
   - ansible-container --debug build
   - ansible-container --debug run
+  - docker images
   - docker ps -a
-  - env | grep DOCKER
   - ansible-playbook -vvv run-tests.yml

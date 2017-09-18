@@ -1,6 +1,6 @@
-# Hello World
-
 [![Build Status](https://travis-ci.org/ansible/hello-world.svg)](https://travis-ci.org/ansible/hello-world)
+
+# Hello World
 
 A simple example project for [Ansible Container](https://github.com/ansible/ansible-container).
 

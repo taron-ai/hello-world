@@ -28,5 +28,24 @@ ansible-container run
 
 # Open a browser and load http://localhost:4000
 open http://localhost:4000
+
 ```
 
+## Deploy It!
+TODO
+
+## Tear it down
+
+When you're ready to remove the *hello-world* containers and images from your local Docker daemon, run the following from within the *hello-world* directory:
+
+```
+ansible-container destroy
+```
+
+## Authors
+
+Take from [j00bar's ](https://github.com/j00bar) AnsibleFest San Francisco 2017 presentation. Thanks @j00bar!
+
+## License
+
+Apache V2

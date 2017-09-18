@@ -29,4 +29,5 @@ galaxy_info:
   galaxy_tags:
   - container
   - flask
-  - hello-world 
+  - hello 
+  - world

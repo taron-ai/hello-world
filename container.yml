@@ -13,7 +13,7 @@ services:
     roles:
       - flask
     entrypoint: /usr/bin/dumb-init
-    command: gunicorn -w 4 -b 0.0.0.0:4000 hellofest:app
+    command: gunicorn -w 4 -b 0.0.0.0:4000 helloworld:app
     ports:
       - 4000:4000
     working_dir: /app

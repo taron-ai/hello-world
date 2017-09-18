@@ -9,5 +9,5 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def hello_fest():
-    return 'Hello, San Francisco!'
+def hello_world():
+    return 'Hello, World!'

@@ -27,6 +27,6 @@ galaxy_info:
   #github_branch:
 
   galaxy_tags:
-  - ansible container
+  - container
   - flask
-  - hello world 
+  - hello-world 

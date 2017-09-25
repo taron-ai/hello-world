@@ -2,7 +2,7 @@
 # Deploys hello-world to a target host.
 ---
 - name: Deploy hello-world to a remote host
-  hosts: tag_awx_user_"{{ instance_tag }}"
+  hosts: tag_awx_dev_True
   gather_facts: no
   tasks: 
     - name: Create a project directory 
@@ -48,9 +48,10 @@
         - output.rc == 0
 
 - name: Run tests
-  hosts: all
+  hosts: tag_awx_dev_True
   vars: 
     DOCKER_HOST: 127.0.0.1
+  gather_facts: no
   tasks:
     - name: Make a tempdir
       tempfile:

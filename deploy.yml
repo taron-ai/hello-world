@@ -5,6 +5,8 @@
   hosts: tag_awx_dev_True
   gather_facts: no
   remote_user: centos
+  vars:
+    deployment_path: /home/centos/hello 
   tasks: 
     - name: Create a project directory 
       file:

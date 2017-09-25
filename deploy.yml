@@ -2,7 +2,7 @@
 # Deploys hello-world to a target host.
 ---
 - name: Deploy hello-world to a remote host
-  hosts: all
+  hosts: tag_awx_user_"{{ instance_tag }}"
   gather_facts: no
   tasks: 
     - name: Create a project directory 

@@ -4,9 +4,8 @@
 - name: Deploy hello-world to a remote host
   hosts: all
   gather_facts: no
-  remote_user: centos
   vars:
-    deployment_path: /home/centos/hello 
+    deployment_path: /home/
   tasks: 
     - name: Create a project directory 
       file:
@@ -51,11 +50,10 @@
         - output.rc == 0
 
 - name: Run tests
-  hosts: tag_awx_dev_True
+  hosts: all
   vars: 
     DOCKER_HOST: 127.0.0.1
   gather_facts: no
-  remote_user: centos
   tasks:
     - name: Make a tempdir
       tempfile:
